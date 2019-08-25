@@ -86,12 +86,12 @@ class App extends Component {
 
     render() {
         return (
-            <div className="App">
-          Please enter a city to see results
-    <SearchBar defaultCity={this.state.city} fetchCityData={this.fetchCityWeather}/>
-    <WeatherBox city={this.state.city} lowTemp={this.state.lowTemp} highTemp={this.state.highTemp} humidity={this.state.humidity}
-    currentTemp={this.state.currentTemp} conditions={this.state.conditions}/>
-    </div>
+          <div className="App">
+            Please enter a city to see results
+            <SearchBar defaultCity={this.state.city} fetchCityData={this.fetchCityWeather}/>
+            <WeatherBox city={this.state.city} lowTemp={this.state.lowTemp} highTemp={this.state.highTemp} humidity={this.state.humidity}
+              currentTemp={this.state.currentTemp} conditions={this.state.conditions}/>
+          </div>
         );
     }
 }
